@@ -1,6 +1,8 @@
 # Fastify with Mongo in TypeScript
 
 <div>This is a fastify with mongo starter project in typescript.</div>
+<br/>
+<div>The projects follows the plugins & controllers/models architecture. You can find two plugin in the plugins folder. The buildFastifyEnvPlugin links the .env file to the fastify server and the connectToDbPlugin connects the server to your Mongo Atlas Cluster.</div>
 
 ## Installation
 
