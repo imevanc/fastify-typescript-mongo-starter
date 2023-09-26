@@ -1,0 +1,29 @@
+{
+  "name": "fastify-typescript-mongo-starter",
+  "version": "1.0.0",
+  "description": "This is a fastify with mongo starter project in typescript.",
+  "main": "server.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node server.ts",
+    "nodemon": "nodemon server.ts",
+    "start": "fastify start server.js",
+    "format": "prettier --write \"./**/*.ts\""
+  },
+  "author": "Evangelos Charalampidis",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/env": "^4.2.0",
+    "@sinclair/typebox": "^0.31.15",
+    "fastify": "^4.23.2",
+    "fastify-cli": "^5.8.0",
+    "fastify-plugin": "^4.5.1",
+    "mongoose": "^7.5.2",
+    "prettier": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.2",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.3.0-dev.20230916"
+  }
+}
