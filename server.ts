@@ -1,4 +1,5 @@
 import Fastify from "fastify";
+import cors from "@fastify/cors";
 import { getAirbnbReviews } from "./routes/index.ts";
 import { buildFastifyEnvPlugin, connectToDbPlugin } from "./plugins/index.ts";
 
@@ -7,6 +8,10 @@ const fastify = Fastify({
 });
 
 fastify.register(buildFastifyEnvPlugin);
+await fastify.register(cors, {
+  origin: "http://localhost:5173",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+});
 fastify.register(connectToDbPlugin);
 fastify.route(getAirbnbReviews);
 
