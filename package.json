@@ -13,6 +13,7 @@
   "author": "Evangelos Charalampidis",
   "license": "MIT",
   "dependencies": {
+    "@fastify/cors": "^8.4.0",
     "@fastify/env": "^4.2.0",
     "@sinclair/typebox": "^0.31.15",
     "fastify": "^4.23.2",

@@ -18,6 +18,7 @@ const ConfigSchema = Type.Strict(
     MONGO_URL: Type.String(),
     MONGO_DB_NAME: Type.String(),
     MONGO_COLLECTION_NAME: Type.String(),
+    ORIGIN: Type.String(),
   }),
 );
 
